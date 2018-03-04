@@ -120,6 +120,6 @@ RUN rm -Rf /tmp/build                                                           
      mkdir /usr/share/fonts/TTF
 
 # Final Configuration
-COPY *.ttf /usr/share/fonts/TTF
+COPY *.ttf /usr/share/fonts/TTF/
 EXPOSE 4822
 CMD ["/usr/local/sbin/guacd -b 0.0.0.0"]
