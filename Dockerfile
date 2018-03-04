@@ -44,7 +44,7 @@ RUN  apk add --update                                                           
 # Setup build environment
 ENV CXX='gcc'
 RUN  mkdir /tmp/build                                                                 &&\
-     cd /tmp/build                                                                    &&\
+     cd /tmp/build
 
 # Build & install ossp-uuid
 RUN  git clone https://github.com/sean-/ossp-uuid.git                                 &&\
