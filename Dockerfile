@@ -42,7 +42,6 @@ RUN  apk add --update                                                           
      libwebp-dev                                                                 &&
 
 # Setup build environment
-export CXX='gcc'                                                                 &&
 mkdir /tmp/build                                                                 &&
 cd /tmp/build                                                                    &&
 
