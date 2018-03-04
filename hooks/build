@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-docker build --build-arg=CXX='gcc' -t $IMAGE_NAME .
