@@ -73,8 +73,7 @@ RUN                                                                             
      apk del .build-deps                                                              && \
      rm -Rf /tmp/build                                                                && \
      rm -f /var/cache/apk/*                                                           && \
-     mkdir /usr/share/fonts/TTF
-
+     mkdir -p /usr/share/fonts/TTF
      COPY LiberationMono-Regular.ttf /usr/share/fonts/TTF/
      EXPOSE 4822
      CMD ["/usr/local/sbin/guacd", "-b", "0.0.0.0", "-f"]
