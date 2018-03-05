@@ -17,7 +17,7 @@ RUN                                                                             
         libvncserver                                                                     \
         openssl                                                                          \
         libvorbis                                                                        \
-        libwebp                                                                          \
+        libwebp                                                                       && \
      apk add --update --no-cache --virtual .build-deps                                   \
         git                                                                              \
         make                                                                             \
