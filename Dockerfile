@@ -11,7 +11,6 @@ RUN                                                                             
         cairo                                                                            \
         libjpeg-turbo                                                                    \
         libpng                                                                           \
-        ffmpeg                                                                           \
         pango                                                                            \
         libssh2                                                                          \
         libvncserver                                                                     \
@@ -33,7 +32,6 @@ RUN                                                                             
         cairo-dev                                                                        \
         libjpeg-turbo-dev                                                                \
         libpng-dev                                                                       \
-        ffmpeg-dev                                                                       \
         pango-dev                                                                        \
         libssh2-dev                                                                      \
         libvncserver-dev                                                                 \
