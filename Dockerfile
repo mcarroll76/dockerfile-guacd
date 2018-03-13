@@ -62,7 +62,7 @@ RUN                                                                             
      make install                                                                        && \
      cd ..                                                                               && \
                                                                                             \
-     git clone --branch https://github.com/pulseaudio/pulseaudio.git                     && \
+     git clone https://github.com/pulseaudio/pulseaudio.git                              && \
      cd pulseaudio                                                                       && \
      ./bootstrap.sh --without-caps                                                       && \
      make                                                                                && \
