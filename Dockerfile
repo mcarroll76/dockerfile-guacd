@@ -4,7 +4,7 @@ MAINTAINER Degenerate76
 # Update git tags here for new releases
 ENV GUACD_VERSION      0.9.14
 ENV FREERDP_VERSION    1.0.2
-ENV PULSEAUDIO_VERSION 0.9.20-stable
+ENV PULSEAUDIO_VERSION HEAD
 ENV CXX='gcc'
 RUN                                                                                         \
      apk add --update --no-cache                                                            \
