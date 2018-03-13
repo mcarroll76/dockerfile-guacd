@@ -70,7 +70,7 @@ RUN                                                                             
      cd ..                                                                               && \
                                                                                             \
      git clone --branch $FREERDP_VERSION https://github.com/FreeRDP/FreeRDP.git          && \
-     cd FreeRDP
+     cd FreeRDP                                                                          && \
      cmake -DCMAKE_BUILD_TYPE=Release -DWITH_SSE2=ON -DWITH_PULSEAUDIO=ON                   \
      -DWITH_CUPS=OFF -DWITH_FFMPEG=OFF -DWITH_ALSA=OFF -DWITH_X11=OFF -DWITH_XKBFILE=OFF && \
      make                                                                                && \
