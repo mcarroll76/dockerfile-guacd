@@ -6,6 +6,7 @@ ENV GUACD_VERSION      0.9.14
 ENV FREERDP_VERSION    1.0.2
 #ENV PULSEAUDIO_VERSION HEAD
 ENV CXX='gcc'
+
 RUN                                                                                                   \
      apk add --update --no-cache                                                                      \
         cairo                                                                                         \
@@ -108,6 +109,7 @@ RUN                                                                             
      rm -Rf /tmp/build                                                                             && \
      rm -f /var/cache/apk/*                                                                        && \
      mkdir -p /usr/share/fonts/TTF
-     COPY LiberationMono-Regular.ttf /usr/share/fonts/TTF/
-     EXPOSE 4822
-     CMD ["/usr/local/sbin/guacd", "-b", "0.0.0.0", "-f"]
+
+COPY LiberationMono-Regular.ttf /usr/share/fonts/TTF/
+EXPOSE 4822
+CMD ["/usr/local/sbin/guacd", "-b", "0.0.0.0", "-f"]
