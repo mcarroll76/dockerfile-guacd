@@ -87,15 +87,20 @@ RUN                                                                             
      make install                                                                                  && \
      cd ..                                                                                         && \
                                                                                                       \ 
-     ln -s /usr/local/lib64/libfreerdp-cache.so.1.0.2    /usr/local/lib/libfreerdp-cache.so.1.0    && \
-     ln -s /usr/local/lib64/libfreerdp-channels.so.1.0.2 /usr/local/lib/libfreerdp-channels.so.1.0 && \
-     ln -s /usr/local/lib64/libfreerdp-codec.so.1.0.2    /usr/local/lib/libfreerdp-codec.so.1.0    && \
-     ln -s /usr/local/lib64/libfreerdp-core.so.1.0.2     /usr/local/lib/libfreerdp-core.so.1.0     && \
-     ln -s /usr/local/lib64/libfreerdp-utils.so.1.0.2    /usr/local/lib/libfreerdp-utils.so.1.0    && \
-     ln -s /usr/local/lib/freerdp/guacdr.so              /usr/local/lib64/freerdp/guacdr.so        && \
-     ln -s /usr/local/lib/freerdp/guacai.so              /usr/local/lib64/freerdp/guacai.so        && \
-     ln -s /usr/local/lib/freerdp/guacsnd.so             /usr/local/lib64/freerdp/guacsnd.so       && \
-     ln -s /usr/local/lib/freerdp/guacsvc.so             /usr/local/lib64/freerdp/guacsvc.so       && \
+     ln -s ../lib64/libfreerdp-cache.so.1.0.2            /usr/local/lib/libfreerdp-cache.so.1.0    && \
+     ln -s ../lib64/libfreerdp-channels.so.1.0.2         /usr/local/lib/libfreerdp-channels.so.1.0 && \
+     ln -s ../lib64/libfreerdp-codec.so.1.0.2            /usr/local/lib/libfreerdp-codec.so.1.0    && \
+     ln -s ../lib64/libfreerdp-core.so.1.0.2             /usr/local/lib/libfreerdp-core.so.1.0     && \
+     ln -s ../lib64/libfreerdp-utils.so.1.0.2            /usr/local/lib/libfreerdp-utils.so.1.0    && \
+     ln -s ../../lib/freerdp/guacdr.so                   /usr/local/lib64/freerdp/guacdr.so        && \
+     ln -s ../../lib/freerdp/guacai.so                   /usr/local/lib64/freerdp/guacai.so        && \
+     ln -s ../../lib/freerdp/guacsnd.so                  /usr/local/lib64/freerdp/guacsnd.so       && \
+     ln -s ../../lib/freerdp/guacsvc.so                  /usr/local/lib64/freerdp/guacsvc.so       && \
+     ln -s ../usr/local/lib64/libfreerdp-utils.so.1.0.2  /lib/libfreerdp-utils.so.1.0              && \
+     ln -s ../usr/local/lib64/libfreerdp-core.so.1.0.2   /lib/libfreerdp-core.so.1.0               && \
+     ln -s ../usr/local/lib/libpulse.so.0                /lib/libpulse.so.0                        && \
+     ln -s ../usr/local/lib/libuuid.so.16                /lib/libuuid.so.16                        && \
+     ln    ../usr/lib/libltdl.so                         /lib/libltdl.so                           && \
      chmod +x /usr/local/lib/libuuid.so.16.0.22                                                    && \
      rm /usr/local/lib/*.a                                                                         && \
      rm /usr/local/lib/*.la                                                                        && \
