@@ -101,6 +101,7 @@ RUN                                                                             
      ln -s ../usr/local/lib/libpulse.so.0                /lib/libpulse.so.0                        && \
      ln -s ../usr/local/lib/libuuid.so.16                /lib/libuuid.so.16                        && \
      ln    /usr/lib/libltdl.so.7.3.1                     /lib/libltdl.so                           && \
+     ln -s libltdl.so                                    /lib/libltdl.so.7                         && \
      chmod +x /usr/local/lib/libuuid.so.16.0.22                                                    && \
      rm /usr/local/lib/*.a                                                                         && \
      rm /usr/local/lib/*.la                                                                        && \
