@@ -62,7 +62,7 @@ RUN                                                                             
      cd ..                                                                                         && \
      ln -s /usr/local/lib/libuuid.so.16.0.22 /lib/libossp-uuid.so                                  && \
                                                                                                       \
-     git clone --branch 0.23 https://github.com/seanmiddleditch/libtelnet.git                                    && \
+     git clone --branch 0.23 https://github.com/seanmiddleditch/libtelnet.git                      && \
      cd libtelnet                                                                                  && \
      autoreconf -i                                                                                 && \
      autoconf                                                                                      && \
